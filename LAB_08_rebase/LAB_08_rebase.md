@@ -55,7 +55,7 @@ git config user.email "engineer@lab.local"
 # Initial commit on main
 echo "# Secure Core API" > README.md
 git add README.md
-git commit -m "chore: initial repository baseline"
+git commit -m "COMMIT 0 :: chore: initial repository baseline"
 git branch -M main
 ```
 Open two terminal panes: one for executing the lab commands, and another for inspecting the DAG with `watch -n 2 -c git log --oneline --graph --all --color --decorate`.
@@ -77,11 +77,11 @@ git checkout -b feature/user-profile
 
 echo "def get_profile(): pass" > profile.py
 git add profile.py
-git commit -m "feat(profile): scaffold profile controller"
+git commit -m "COMMIT 1 :: feat(profile): scaffold profile controller"
 
 echo "def update_profile(): pass" >> profile.py
 git add profile.py
-git commit -m "feat(profile): implement profile update logic"
+git commit -m "COMMIT 2 :: feat(profile): implement profile update logic"
 ```
 
 #### Step 2: Simulate upstream changes on `main`
